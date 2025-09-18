@@ -1,0 +1,498 @@
+﻿/* reset css */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	/* Prevent webview being amplified on ios */
+	 -webkit-text-size-adjust: 100% !important;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+html,
+body,
+#root {
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%;
+	height: 100%;
+	background: ivory;
+	user-select: none;
+}
+
+
+.top-nav-wrapper,
+.top-nav-wrapper * {
+		pointer-events: none;
+}
+
+.top-nav-wrapper > div > .inner {
+	color: #fff;
+	display: flex;
+	justify-content: space-between ;
+	/* padding-top: 10px; */
+}
+
+.top-nav-container > div  {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	padding-right: 51px;
+}
+
+.nav span  {
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: 700;
+	display: inline-block;
+	padding: 5px 20px;
+	margin: 10px 0;
+	border-right: 1px solid #707070;
+}
+
+
+
+.side {
+	display: flex;
+	padding-left: 20px;
+	width: 100vw;
+	justify-content: space-between;
+	background-color: #000;
+}
+.side-bar, 
+.logo {
+	pointer-events: all;
+	cursor: pointer;
+}
+
+.side-bar {
+	/* width: 50px; */
+	padding-right: 20px;
+	height: 44px;
+	align-items: center;
+	display: flex;
+	opacity: 0;
+} 
+.logo {
+    height: 44px;
+    align-items: center;
+    display: flex;
+	/* padding-top: 15px; */
+}
+
+.logo > img {
+	width: 130px;
+	height: 18px;
+}
+
+
+  rect {
+    transition: all .3s ease-in-out;
+  }
+.mobile-side-bar    .middle {
+      x: 0;
+      opacity: 0;
+}
+
+
+ .mobile-side-bar    .top {
+      transform: rotate(45deg);
+      transform-origin: center top;
+      x: 50px;
+      y: 35px;
+    }
+  .mobile-side-bar     .bottom {
+      transform: rotate(-45deg);
+      transform-origin: center top;
+      x: -20px;
+      y: 25px;
+    }
+
+.mobile_header {
+	/* padding-top: 60px;
+	padding-left: 40px; */
+	width: 198px;
+	height: 100vh;
+	background: #fff;
+	padding: 0 20px;
+	pointer-events: all;
+}
+.nav-container {
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: flex-end;
+}
+
+.mobile_header span  {
+	pointer-events: all;
+	color: #4D4D4D;
+	width: 100%;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 30px 0;
+	padding-left: 10px;
+	border-bottom: 1px solid #F2F2F2;
+}
+.nav > div {
+	cursor: pointer;
+
+		pointer-events: all;
+	/* padding-left: 40px; */
+}
+.mobile_wrapper {
+    width: 100vw;
+    height: 100vh;
+    /* background: rgba(0,0,0,.9); */
+    transform-origin: top center;
+		display: flex;
+		justify-content: flex-end;
+		margin-top: -44px;
+}
+
+.topWords,
+.topWords *
+{
+		pointer-events: none;
+}
+
+.topWords  > div > .wrapper {
+	height: 100vh;
+	padding: 50px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: flex-start;
+	color: white;
+	opacity: 0;
+}
+
+
+.mobile_close {
+	cursor: pointer;
+	padding-top: 10px;
+	text-align: right;
+}
+
+
+/* .topWords > div  p.check-words * { */
+.check {
+
+	cursor: pointer;
+	color: #fff;
+	border: none;
+	background-color: transparent;
+	outline: none;
+	padding: 0;
+
+}
+
+
+
+
+.industry-wrapper,
+.industry-wrapper *
+{
+		/* pointer-events: none; */
+}
+
+.industry-wrapper > div > .item {
+	width: 300px;
+	text-align: center;
+	cursor: pointer;
+	pointer-events: all;
+	color: #fff;
+	visibility: hidden;
+		/* display: none; */
+}
+
+.industry-wrapper > div > .item:hover .icon-wrapper {
+	/* transform: scale3d(1.2,1.2,1); */
+	transform: scale3d(1.1,1.1,1);
+}
+
+.industry-icon {
+	width: 58px; height: 58px; display: inline-block; padding-top: 10px;
+}
+
+.eng-title {
+
+	font-family: 'Microsoft JhengHei UI';
+	font-size: 16px;
+	/* font-weight: 700; */
+}
+
+
+.industry-title {
+	font-family: 'Microsoft JhengHei UI';
+	font-size: 32px;
+
+	font-weight: 700;
+	line-height: 131%;
+}
+
+
+
+.loading {
+	color: #fff;
+	width: 100px;
+	text-align: center;
+	/* transform: scale(2); */
+}
+
+.loading svg path,
+.loading svg rect{
+  fill: #fff;
+}
+
+.ready-wrapper {
+	position: relative;
+}
+
+.ready-wrapper::after {
+	content:'点击进入了解玻色量子应用';
+	color: #fff;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	font-size: 16px;
+}
+
+
+.ready-wrapper:hover::after{
+
+	content:'开始旅程';
+
+}
+
+.ready-img {
+	width: 414px;
+	height: 414px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 414px 414px;
+	background-image: url('./assets/start/ready.png');
+	cursor: pointer;
+}
+
+
+.ready-img:hover {
+
+	width: 452px;
+	height: 452px;
+
+	background-size: 452px 452px;
+	background-image: url('./assets/start/go.png');
+}
+
+.ready-words {
+	text-align: center;
+	color: #fff;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	font-size: 16px;
+}
+
+.top-desc {
+
+	font-family: 'Microsoft JhengHei UI';
+	padding-bottom: 27px;
+	font-size: 12px;
+}
+
+.title {
+	font-family: 'Microsoft JhengHei UI';
+
+	/* font-size: 32px; */
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 131%;
+	padding-bottom: 27px;
+}
+
+.bottom-desc {
+	font-family: 'Microsoft JhengHei UI';
+	padding-bottom: 35px;
+	font-size: 11px;
+	word-wrap: break-word;
+
+	line-height: 24px;
+}
+.check {
+
+	font-family: 'Microsoft JhengHei UI';
+	font-size: 11px;
+
+}
+
+
+.check-icon {
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+	padding-left: 10px;
+	opacity: 0;
+}
+
+.audioBox {
+	position: absolute;
+	right: 20px; top: 50px;
+	height: 50px;
+	/* transform: translate(-50%, -50%); */
+	cursor: pointer;
+	pointer-events: all;
+	text-align: center;
+}
+
+
+.copyrightBox  {
+	position: absolute;
+	left: 70px; bottom: 50px;
+}
+
+.copyrightBox  .copyright-big  {
+	display: block;
+
+}
+
+.copyrightBox  .copyright-small{
+	display: none;
+}
+.copyrightBox  p {
+	font-size: 14px;color: #c4c4c4 ;
+}
+
+
+@media only screen and (min-width: 1025px) {
+
+.top-desc {
+	font-size: 24px;
+}
+.title {
+	font-size: 64px;
+}
+
+.bottom-desc {
+	width: 540px;
+	font-size: 20px;
+
+	line-height: 32px;
+
+	word-wrap: break-word;
+}
+.check {
+	font-size: 20px;
+
+}
+
+.topWords  > div > .wrapper {
+        padding:0 10vw;
+        align-items: flex-start
+				
+    }
+}
+
+
+@media(max-width: 768px) {
+
+	.industry-wrapper > div > .transportationSmallItem {
+		width: 150px;
+	}
+	.eng-title {
+		font-size: 12px;
+		padding-bottom: 5px;
+	}
+
+	.industry-title {
+		font-size: 16px;
+		padding-bottom: 5px;
+	}
+
+	.side-bar {
+		opacity: 1;
+	}
+
+
+	.audioBox {
+		right: 20px; bottom: 32px;
+	}
+	.audioBox .audioWords {
+		opacity: 0;
+		display: none;
+	}
+
+
+	.copyrightBox  {
+		/* left: 33px; bottom: 32px; */
+		left: 50%; bottom: 54px;
+		transform: translateX(-50%);
+		width: 330px;
+	}
+	.copyrightBox p {
+		/* font-size: 7px; */
+		font-size: 12px;
+	}
+	.copyrightBox .copyright-small {
+		text-align: center;
+		display: block;
+	}
+
+	.copyrightBox .copyright-big{
+		display: none;
+	}
+
+}

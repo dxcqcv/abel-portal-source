@@ -1,0 +1,43 @@
+{
+  "name": "abel-portal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@bitbucket.org:dxcqcv/abel-portal.git",
+  "author": "dxcqcv <dxcqcv@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env PUBLIC_URL=/index PORT=5000  react-scripts start",
+    "build-git": "cross-env PUBLIC_URL=/demo/3d-demo/universe  react-scripts build",
+    "build": "cross-env PUBLIC_URL=/index react-scripts  build",
+    "build-local": "react-scripts  build"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.65.3",
+    "@react-three/fiber": "^8.12.0",
+    "canvas-sketch-util": "^1.10.0",
+    "gsap": "^3.11.5",
+    "leva": "^0.9.34",
+    "r3f-perf": "^7.1.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "styled-components": "^6.0.0-rc.1",
+    "three": "^0.151.3",
+    "zustand": "^4.3.7"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
